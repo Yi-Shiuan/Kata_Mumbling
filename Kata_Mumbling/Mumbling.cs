@@ -8,11 +8,6 @@ namespace Kata_Mumbling
     {
         public string Accum(string s)
         {
-            if (s.Length == 1)
-            {
-                return s.ToUpper();
-            }
-
             var i = 1;
             var result = new List<string>();
             foreach (var item in s)
