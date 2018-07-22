@@ -31,5 +31,15 @@ namespace Mumbling.Tests
 
             result.Should().Be("B");
         }
+
+        [Fact]
+        public void InputABOutUpCaseAAndBb()
+        {
+            var service = new Mumbling();
+
+            var result = service.Accum("ab");
+
+            result.Should().Be("A-Bb");
+        }
     }
 }
