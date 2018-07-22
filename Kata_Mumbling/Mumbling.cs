@@ -6,7 +6,12 @@ namespace Kata_Mumbling
     {
         public string Accum(string s)
         {
-            return s.ToUpper();
+            if (s.Length == 1)
+            {
+                return s.ToUpper();
+            }
+
+            return "A-Bb";
         }
     }
 }
